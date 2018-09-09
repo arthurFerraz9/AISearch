@@ -1,4 +1,4 @@
-class StarA:
+class A_Star:
 
     def __init__(self, heuristic, problem):
         self.heuristic = heuristic
@@ -43,5 +43,8 @@ def get_child_node(node, action):
 
 
 def solution(node):
-    return node
-
+    sentence = []
+    while node is not None:
+        sentence.insert(0, node.state)
+        node = node.father
+    return sentence
