@@ -1,8 +1,10 @@
 class A_Star:
 
-    def __init__(self, heuristic, problem):
+    def __init__(self, heuristic, problem, vocabulary=[], word_cost=10):
         self.heuristic = heuristic
         self.problem = problem
+        self.vocabulary = vocabulary
+        self.word_cost = word_cost
 
     def execute(self):
         node = make_node(self.problem)
@@ -10,17 +12,23 @@ class A_Star:
         frontier = [node]
         explored = []
         while True:
-            node = frontier.pop()
-            if self.problem.goal_test(solution(node)):
-                return solution(node)
             if len(frontier) == 0:
                 return None
+            node = frontier.pop()
+            print(node.state)
+            if self.problem.goal_test(node.state):
+                return node.state
             explored.append(node)
-            for action in self.problem.actions(node.state):
-                child = get_child_node(node, action)
+            for word in self.vocabulary:
+                child = get_child_node(node, word)
                 if child.state not in explored and child.state not in frontier:
-                    frontier.append(child.state)
-                return None
+                    frontier.append(child)
+
+            frontier = sorted(frontier, key=lambda node: self.evaluate(node), reverse=True)
+
+    def evaluate(self, node):
+        return len(node.state)*self.word_cost #+ self.heuristic(phrase)
+
 
 
 class Node:
@@ -35,16 +43,7 @@ def make_node(problem):
     return node
 
 
-def get_child_node(node, action):
-    child_node = Node()
-    #child_node.state = action(node.state)
-    child_node.father = node
+def get_child_node(node, word):
+    child_node = Node(list(node.state), node)
+    child_node.state.append(word)
     return child_node
-
-
-def solution(node):
-    sentence = []
-    while node is not None:
-        sentence.insert(0, node.state)
-        node = node.father
-    return sentence
