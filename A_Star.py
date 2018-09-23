@@ -8,7 +8,6 @@ class A_Star:
 
     def execute(self):
         node = make_node(self.problem)
-        pathCost = 0
         frontier = [node]
         explored = []
         while True:
@@ -16,19 +15,20 @@ class A_Star:
                 return None
             node = frontier.pop()
             print(node.state)
+
             if self.problem.goal_test(node.state):
                 return node.state
-            explored.append(node)
+
             for word in self.vocabulary:
-                child = get_child_node(node, word)
-                if child.state not in explored and child.state not in frontier:
-                    frontier.append(child)
+                if word not in node.state:
+                    child = get_child_node(node, word)
+                    if child.state not in explored and child.state not in frontier:
+                        frontier.append(child)
 
             frontier = sorted(frontier, key=lambda node: self.evaluate(node), reverse=True)
 
     def evaluate(self, node):
-        return len(node.state)*self.word_cost #+ self.heuristic(phrase)
-
+        return len(node.state)*self.word_cost - self.heuristic.value_of(node.state)
 
 
 class Node:
