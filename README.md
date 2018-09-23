@@ -1,5 +1,5 @@
 # AISearch
-This is a implemetation of A* and Genetic Algorithms for a Syntax Problem: how to construct phrases that make some syntax sense
+This is a implemetation of A* and Genetic Algorithms for a Syntax Problem: how to construct phrases that have some syntax sense
 
 Activate virtual enviroment:
 
