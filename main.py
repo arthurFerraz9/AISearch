@@ -4,12 +4,12 @@ from heuristic import Heuristic
 from genetic import Genetic
 import text_utils
 
-vocabulary = text_utils.import_text("BaseText")
+vocabulary = text_utils.import_text("BaseText2")
 
 #Only needed when classifier was not created (it's expensive)
-#text_utils.create_classifier("BaseTextClassifier", vocabulary)
+#text_utils.create_classifier("BaseTextClassifier2", vocabulary)
 
-heuristic = Heuristic("BaseTextClassifier")
+heuristic = Heuristic("BaseTextClassifier2")
 
 print("Which search do you want?")
 print("1. A*")
