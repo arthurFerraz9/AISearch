@@ -4,22 +4,22 @@ from heuristic import Heuristic
 from genetic import Genetic
 import text_utils
 
-vocabulary = text_utils.import_text("BaseText2")
-
-#Only needed when classifier was not created (it's expensive)
-#text_utils.create_classifier("BaseTextClassifier2", vocabulary)
-
-heuristic = Heuristic("BaseTextClassifier2")
+vocabulary = text_utils.import_text("BaseText3")
+problem = None
 
 print("Which search do you want?")
 print("1. A*")
 print("2. Genetic")
-
 option = int(input())
 
-problem = None
 if option == 1:
+    #Only needed when classifier was not created (it's expensive)
+    #text_utils.create_classifier("BaseTextClassifier3", vocabulary)
+    heuristic = Heuristic("BaseTextClassifier3")
     problem = A_Star(heuristic, SyntaxProblem(6), vocabulary)
 elif option == 2:
-    problem = Genetic(heuristic, SyntaxProblem(6), vocabulary)
-problem.execute()
+    #Uses NLTK library to generate the classifier
+    #text_utils.create_nltk_classifier("BaseTextClassifier3", "BaseText3")
+    heuristic = Heuristic("BaseTextClassifier3", "BaseText3")
+    #problem = Genetic(heuristic, SyntaxProblem(6), vocabulary)
+#problem.execute()

@@ -1,6 +1,8 @@
+import nltk
+
 class Heuristic:
 
-    def __init__(self, file_of_meanings):
+    def __init__(self, file_of_meanings, base_text_path=None):
         self.word_classificator = {}
         with open(file_of_meanings, "r") as classifier:
             lines = classifier.readlines()
@@ -8,6 +10,11 @@ class Heuristic:
                 word, kind = line.split(':')
                 kind = kind.replace('\n','')
                 self.word_classificator[word] = kind
+        if base_text_path is not None:
+            with open(base_text_path) as base_text_file:
+                raw = base_text_file.read()
+                tokens = nltk.word_tokenize(raw)
+            self.full_text = nltk.Text(tokens)
 
         self.rules = {
             'noun': ['adjective', 'definite-article', 'indefinite-article', 'verb-transitive', 'pronoun'],
@@ -39,4 +46,16 @@ class Heuristic:
                 value += 7
         return value
 
+    def genetic_value_of(self, phrase):
+        value = 0
+        #para cada palavra da frase
+            #se a palavra é a primeira
+                #checar valor da palavra da direita
+            #se a palavra é a ultima
+                #checar valor da palvra da esquerda
+            #se a palavra é outra qualquer
+                #checar valor das palavras da esquerda e da direita
+            #adicionar o valor à value
+        #retornar value
+        pass
 
