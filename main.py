@@ -13,6 +13,7 @@ print("2. Genetic")
 option = int(input())
 
 if option == 1:
+    vocabulary = text_utils.import_text("BaseText3")
     #Only needed when classifier was not created (it's expensive)
     #text_utils.create_classifier("BaseTextClassifier3", vocabulary)
     heuristic = Heuristic("BaseTextClassifier3")
@@ -20,6 +21,9 @@ if option == 1:
 elif option == 2:
     #Uses NLTK library to generate the classifier
     #text_utils.create_nltk_classifier("BaseTextClassifier3", "BaseText3")
+    vocabulary = text_utils.genetic_import_text("BaseText3")
     heuristic = Heuristic("BaseTextClassifier3", "BaseText3")
-    #problem = Genetic(heuristic, SyntaxProblem(6), vocabulary)
-#problem.execute()
+    problem = Genetic(heuristic, SyntaxProblem(6), vocabulary)
+elif option == 3:
+    print("teste")
+problem.execute()

@@ -46,16 +46,54 @@ class Heuristic:
                 value += 7
         return value
 
-    def genetic_value_of(self, phrase):
+    def genetic_value_of(self, sentence):
         value = 0
-        #para cada palavra da frase
-            #se a palavra é a primeira
-                #checar valor da palavra da direita
-            #se a palavra é a ultima
-                #checar valor da palvra da esquerda
-            #se a palavra é outra qualquer
-                #checar valor das palavras da esquerda e da direita
-            #adicionar o valor à value
-        #retornar value
-        pass
+        for i in range(len(sentence)):
+            left_value = 0
+            right_value = 0
+            if i == 0:
+                right_value = self.side_value_of(sentence, 0, 'r')
+            elif i == len(sentence) - 1:
+                left_value = self.side_value_of(sentence, -1, 'l')
+            else:
+                left_value = self.side_value_of(sentence, i, 'left')
+                right_value = self.side_value_of(sentence, i, 'right')
+            value += left_value + right_value
+        return value
+
+    def side_value_of(self, sentence, pos, side):
+        side_pos = self.get_side_index(pos, side)
+        concordance_list = self.full_text.concordance_list(sentence[pos])
+        side_syntax_kind = self.word_classificator[sentence[side_pos]]
+        qty_syntax_ocurrences = self.count_syntax_ocurrences(concordance_list, side, side_syntax_kind)
+        if qty_syntax_ocurrences >= 1:
+            return 1
+        else:
+            return 0
+
+    def get_side_index(self, pos, side):
+        if side == 'right':
+            return pos + 1
+        else:
+            return pos - 1
+
+    def count_syntax_ocurrences(self, concordance_list, side, side_syntax_kind):
+        counter = 0
+        for concordance_line in concordance_list:
+            line_classificator = nltk.pos_tag(nltk.word_tokenize(concordance_line.line))
+            side_word = self.get_side_word_from_context(concordance_line, side)
+            #TODO - abaixo estamos testando apenas a correspondencia da palavra na frase
+            # independente de sua posição, ou seja, se houver duas ocorrências, esse teste
+            # é inconsistente
+            if (side_word, side_syntax_kind) in line_classificator:
+                counter += 1
+        return counter
+
+    def get_side_word_from_context(self, concordance_line, side):
+        side_word = ""
+        if side == 'left' and len(concordance_line.left) != 0:
+            side_word = concordance_line.left[-1]
+        elif side == 'right' and len(concordance_line.left) != 0:
+            side_word = concordance_line.right[0]
+        return side_word
 

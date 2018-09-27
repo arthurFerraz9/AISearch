@@ -11,6 +11,15 @@ def import_text(file_path):
     vocabulary = text.split(" ")
     return set(vocabulary)
 
+def genetic_import_text(file_path):
+    vocabulary = []
+    with open(file_path) as text_file:
+        raw = text_file.read()
+    tokens = word_tokenize(raw)
+    for token in tokens:
+        if token not in non_desirable_characters:
+            vocabulary.append(token)
+    return set(vocabulary)
 
 def create_classifier(file_path, vocabulary):
     with open(file_path, "w") as classifier:

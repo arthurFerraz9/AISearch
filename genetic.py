@@ -14,7 +14,7 @@ class Genetic:
         self.population.generate_random(heuristic, vocabulary)
 
     def execute(self):
-        for i in range(1000):
+        for i in range(10):
             new_population = Population(self.population_size, self.individual_size)
             for j in range(len(self.population.individuals)):
                 first_parent = self.select_individual()

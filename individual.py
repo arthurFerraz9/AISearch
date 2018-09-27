@@ -25,7 +25,7 @@ class Individual:
         return candidate_gene
 
     def calculate_fitness(self, heuristic):
-        return heuristic.value_of(self.genes)
+        return heuristic.genetic_value_of(self.genes)
 
     def mutate(self, heuristic, vocabulary):
         mutation_index = randint(0, len(self.genes) - 1)
