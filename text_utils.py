@@ -4,7 +4,7 @@ from vocabulary.vocabulary import Vocabulary as vb
 def import_text(file_path):
     with open(file_path, "r") as text_file:
         text = text_file.read()
-    for non_desirable_character in ['“', '”', '\n', '.', ',', '!', '?']:
+    for non_desirable_character in ['"', '"', '\n', '.', ',', '!', '?']:
         text = text.replace(non_desirable_character, '')
     vocabulary = text.split(" ")
     return set(vocabulary)
