@@ -66,10 +66,7 @@ class Heuristic:
         concordance_list = self.full_text.concordance_list(sentence[pos])
         side_syntax_kind = self.word_classificator[sentence[side_pos]]
         qty_syntax_ocurrences = self.count_syntax_ocurrences(concordance_list, side, side_syntax_kind)
-        if qty_syntax_ocurrences >= 1:
-            return 1
-        else:
-            return 0
+        return qty_syntax_ocurrences
 
     def get_side_index(self, pos, side):
         if side == 'right':
@@ -82,9 +79,6 @@ class Heuristic:
         for concordance_line in concordance_list:
             line_classificator = nltk.pos_tag(nltk.word_tokenize(concordance_line.line))
             side_word = self.get_side_word_from_context(concordance_line, side)
-            #TODO - abaixo estamos testando apenas a correspondencia da palavra na frase
-            # independente de sua posição, ou seja, se houver duas ocorrências, esse teste
-            # é inconsistente
             if (side_word, side_syntax_kind) in line_classificator:
                 counter += 1
         return counter

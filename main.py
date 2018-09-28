@@ -11,17 +11,11 @@ option = int(input())
 problem = None
 
 if option == 1:
-    vocabulary = text_utils.import_text("BaseText")
-    #Only needed when classifier was not created (it's expensive)
-    #text_utils.create_classifier("BaseTextClassifier", vocabulary)
-    heuristic = Heuristic("BaseTextClassifier")
+    vocabulary = text_utils.import_text("GameOfThrones")
+    heuristic = Heuristic("GameOfThronesClassifier")
     problem = A_Star(heuristic, SyntaxProblem(6), vocabulary)
 elif option == 2:
-    #Uses NLTK library to generate the classifier
-    #text_utils.create_nltk_classifier("BaseTextClassifier3", "BaseText3")
-    vocabulary = text_utils.genetic_import_text("BaseText3")
-    heuristic = Heuristic("BaseTextClassifier3", "BaseText3")
+    vocabulary = text_utils.genetic_import_text("ThreeLittlePigs")
+    heuristic = Heuristic("ThreeLittlePigsClassifier", "ThreeLittlePigs")
     problem = Genetic(heuristic, SyntaxProblem(6), vocabulary)
-elif option == 3:
-    print("teste")
 problem.execute()
