@@ -1,7 +1,7 @@
 from random import randint
 from population import Population
 from individual import Individual
-
+from copy import deepcopy
 
 class Genetic:
 
@@ -12,11 +12,13 @@ class Genetic:
         self.vocabulary = vocabulary
         self.population = Population(self.population_size, self.individual_size)
         self.population.generate_random(heuristic, vocabulary)
+        self.elite = []
 
     def execute(self):
-        for i in range(1000):
+        for i in range(10):
             new_population = Population(self.population_size, self.individual_size)
-            for j in range(len(self.population.individuals)):
+            new_population = self.apply_elitism(new_population)
+            for j in range(len(self.population.individuals) - len(new_population.individuals)):
                 first_parent = self.select_individual()
                 second_parent = self.select_individual()
                 child = self.reproduce(first_parent, second_parent)
@@ -48,5 +50,16 @@ class Genetic:
         if randint(0, 99) < p:
             child.mutate(self.heuristic, self.vocabulary)
         return child
+
+    def apply_elitism(self, new_pop):
+        qty_elites = 5
+        pop = deepcopy(self.population)
+        for i in range(qty_elites):
+            best = pop.get_best()
+            new_pop.add_individual(best)
+            pop.individuals.remove(best)
+        return new_pop
+
+
 
 
