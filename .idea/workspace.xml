@@ -2,15 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3b2a5e4-c049-4edf-b3a9-3f1bca4b6a51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/heuristic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/text_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/AISearch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AISearch.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A_Star.py" beforeDir="false" afterPath="$PROJECT_DIR$/A_Star.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A_Star.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameOfThrones" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameOfThronesClassifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreeLittlePigs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThreeLittlePigsClassifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/genetic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/heuristic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/individual.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements" beforeDir="false" afterPath="$PROJECT_DIR$/requirements" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/population.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/text_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests-2.19.1.dist-info/DESCRIPTION.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests-2.19.1.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests-2.19.1.dist-info/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests-2.19.1.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests-2.19.1.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests-2.19.1.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests-2.19.1.dist-info/metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests-2.19.1.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/__version__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/adapters.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/adapters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/certs.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/certs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/compat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/cookies.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/cookies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/help.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/packages.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/sessions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/sessions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/status_codes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/status_codes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/structures.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/structures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.5/site-packages/requests/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,38 +50,41 @@
     <session id="-1170233776">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.26" value="2" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.54" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="BaseTextClassifier" value="1" />
-          <entry key="py" value="11" />
+          <entry key="GameOfThronesClassifier" value="1" />
+          <entry key="ThreeLittlePigsClassifier" value="1" />
+          <entry key="py" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="11" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Python" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="6" />
-          <entry key="py" value="7227" />
+          <entry key="dummy" value="19" />
+          <entry key="py" value="7342" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Python" value="7227" />
+          <entry key="PLAIN_TEXT" value="19" />
+          <entry key="Python" value="7342" />
         </counts>
       </usages-collector>
     </session>
@@ -63,58 +94,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+            <state relative-caret-position="90">
+              <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/heuristic.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="38" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="38" />
-              <folding>
-                <marker date="1537640081072" expanded="true" signature="16:17" ph="..." />
-                <marker date="1537640081072" expanded="true" signature="1538:1544" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/text_utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-              <folding>
-                <marker date="1537640080992" expanded="true" signature="80:85" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Problem.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <marker date="1537144341409" expanded="true" signature="20:21" ph="..." />
-                <marker date="1537144341409" expanded="true" signature="20:26" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/A_Star.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -139,6 +123,9 @@
         <option value="$PROJECT_DIR$/A_Star.py" />
         <option value="$PROJECT_DIR$/text_utils.py" />
         <option value="$PROJECT_DIR$/heuristic.py" />
+        <option value="$PROJECT_DIR$/Algorithms/population.py" />
+        <option value="$PROJECT_DIR$/Algorithms/individual.py" />
+        <option value="$PROJECT_DIR$/Algorithms/genetic.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
@@ -235,14 +222,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.82019705" visible="true" weight="0.24944155" />
       <window_info id="Structure" order="1" sideWeight="0.17980295" side_tool="true" weight="0.24944155" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4996277" visible="true" weight="0.08387097" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4996277" visible="true" weight="0.57258064" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -314,13 +300,17 @@
     <entry file="file://$PROJECT_DIR$/BaseTextClassifier">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/heuristic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/text_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding>
-            <marker date="1537640080992" expanded="true" signature="80:85" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -328,35 +318,68 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <marker date="1537144341409" expanded="true" signature="20:21" ph="..." />
-            <marker date="1537144341409" expanded="true" signature="20:26" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/A_Star.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="570">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/heuristic.py">
+    <entry file="file://$PROJECT_DIR$/Algorithms/population.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="38" />
+        <state relative-caret-position="180">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/individual.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/genetic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
           <folding>
-            <marker date="1537640081072" expanded="true" signature="16:17" ph="..." />
-            <marker date="1537640081072" expanded="true" signature="1538:1544" ph="..." />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Classifiers/GameOfThronesClassifier">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classifiers/ThreeLittlePigsClassifier">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Evaluation/heuristic.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Problems/SyntaxProblem.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/text_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Algorithms/A_Star.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        <state relative-caret-position="90">
+          <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
